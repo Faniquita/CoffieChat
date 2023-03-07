@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffc697;  
+  background-image: url("./img/padrao-de-cao-sem-costura-com-impressoes-de-pata-e-coracoes-textura-de-pe-de-gato-padrao-com-impressao-de-pata-de-cachorrinho_192280-743.png");
+  background-size: cover;
+  background-size: 800px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#content {  
+  height: 100%;
+  width: 100%;  
+  color: white;
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: fixed;
+}
+
+.logo {
+  height: 260px;
+  pointer-events: none;
+  filter: drop-shadow(0px 0px 1px #ffab48);
+  cursor: pointer;
+}
+
+.menu{
+  display: grid;
+}
+
+.menu a{
+  text-decoration: none;  
+  text-align: center;
+  top: 40px;
+  position: relative;
+  font-size: 22px;
+  padding: 6px;
+  color: #ffab48;
+}
+
+.menu a:hover{
+  color: #fce189;
+  text-shadow: 0px 0px 6px #ffab48 ;
+}
+
+.content-menu{
+  background-color: #1d1d1b;
+  height: 100%;
+  min-width: 250px;
+  position: static;
+}
+
+#content-cadastro{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+
+
