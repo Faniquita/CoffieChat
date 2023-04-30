@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('content-cadastro'));
 root.render(
   <React.StrictMode>

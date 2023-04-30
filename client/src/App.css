@@ -102,7 +102,7 @@ button{
   height: 400px;
   width: 600px;
   position: relative;
-  top: 8px;
+  top: 1px;
 }
 
 #carousel{
@@ -161,7 +161,7 @@ button{
 }
 
 .menu-text{
-  width: 200px;
+  width: 400px;
   height: auto;
   position: relative;
   padding: 0 40px 0 0;
@@ -173,7 +173,7 @@ button{
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 800px;
+  width: 1000px;
   margin: auto;
   font-family: 'Cookie', cursive;
   font-size: 35px;

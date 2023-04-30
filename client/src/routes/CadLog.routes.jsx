@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//import axios from "axios";
+import axios from "axios";
 
 
 
@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 const CadLog = ()=>{
 
        
-    /*//Mapeia os campos do form de cadastro
+    //Mapeia os campos do form de cadastro
     const [campos, setValues] = useState({
         txtEmail: '',
         txtNome: '',
@@ -27,10 +27,10 @@ const CadLog = ()=>{
     const handleFormSubmit = (event)=>{
         event.preventDefault();
         console.log(campos);
-        axios.post('http://localhost:3000/cadlog', campos).then(response => {
+        /*axios.post('http://localhost:3000/cadlog', campos).then(response => {
             alert(response.data.dados.length + ' cadastros!');
-        })
-    }*/
+        })*/
+    }
    
    
 
@@ -50,11 +50,11 @@ const CadLog = ()=>{
                     <div className="linha"></div>
 
                     <div className="cadastro">                              
-                        <form id="cadastro" /*onSubmit={handleFormSubmit}*/>
-                            <input className="input" id="cadEmail" type="email" name="txtEmail" /*onChange={handleInputChange}*/ placeholder="Email" required="" /> 
-                            <input className="input" id="cadNome" type="text" name="txtNome" /*onChange={handleInputChange}*/ title="Cpf deve ter a seguinte forma: 000.000.000-00" placeholder="Nome" required="" />                                     
-                            <input className="input" id="cadData" type="date" name="nascimentoData" /*onChange={handleInputChange}*/ placeholder="Data de Nacimento" required="" /> 
-                            <input className="input" id="cadSenha" type="password" name="txtSenha" /*onChange={handleInputChange}*/ placeholder="Senha" required="" />
+                        <form id="cadastro" onSubmit={handleFormSubmit}>
+                            <input className="input" id="cadEmail" type="email" name="txtEmail" onChange={handleInputChange} placeholder="Email" required="" /> 
+                            <input className="input" id="cadNome" type="text" name="txtNome" onChange={handleInputChange} placeholder="Nome" required="" />                                     
+                            <input className="input" id="cadData" type="date" name="nascimentoData" onChange={handleInputChange} placeholder="Data de Nacimento" required="" /> 
+                            <input className="input" id="cadSenha" type="password" name="txtSenha" onChange={handleInputChange} placeholder="Senha" required="" />
                             <button className="button" type="submit" name="registrar" >Registrar-se</button>
                         </form>       
                     </div>
